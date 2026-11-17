@@ -5,6 +5,7 @@ from typing import Any, Callable
 
 @dataclass
 class TestCase:
+    __test__ = False
     name: str
     inputs: tuple
     expected: Any
